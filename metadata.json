@@ -1,0 +1,6 @@
+{
+  "name": "Study & Fitness Balance Tracker",
+  "description": "A gamified productivity companion for college students that balancing posture-monitoring focus study sessions with real-time AI pose workout tracking.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

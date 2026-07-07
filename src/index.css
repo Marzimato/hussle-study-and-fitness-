@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Olive theme (Fitness) */
+  --color-olive-50: #f4f6f0;
+  --color-olive-100: #e5ebda;
+  --color-olive-200: #cbdab7;
+  --color-olive-300: #a7c18a;
+  --color-olive-400: #82a560;
+  --color-olive-500: #658845;
+  --color-olive-600: #4e6b34;
+  --color-olive-700: #3d542b;
+  --color-olive-800: #334424;
+  --color-olive-900: #2c3a21;
+  --color-olive-950: #131b0e;
+
+  /* Custom Bluish Shade of Grey theme (Academics/Studies) */
+  --color-studygrey-50: #f4f6f8;
+  --color-studygrey-100: #e8ecf1;
+  --color-studygrey-200: #cbd6e2;
+  --color-studygrey-300: #a0b6cb;
+  --color-studygrey-400: #6e8fae;
+  --color-studygrey-500: #4f7394;
+  --color-studygrey-600: #3c5b78;
+  --color-studygrey-700: #324a61;
+  --color-studygrey-800: #2a3c4f;
+  --color-studygrey-900: #253342;
+  --color-studygrey-950: #111820;
+}
+
+@layer utilities {
+  /* Dynamic glowing indicators */
+  .glow-olive {
+    box-shadow: 0 0 20px rgba(101, 136, 69, 0.25);
+  }
+  .glow-study {
+    box-shadow: 0 0 20px rgba(79, 115, 148, 0.25);
+  }
+}
+
+/* Base style overrides to ensure custom fonts take effect and flow beautifully */
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.011em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
